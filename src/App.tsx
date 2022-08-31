@@ -1,23 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import logo from './logo.svg';
-import './App.css';
+import init from "./test/main";
+import solution1 from "./test/solution1";
+import solution2 from "./test/solution2";
 
 function App() {
+  useEffect(() => {
+    init();
+    solution1();
+    solution2();
+  });
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
     </div>
   );
